@@ -23,6 +23,9 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <!-- Animate.css (obrigatório) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- WOW.js -->
@@ -36,7 +39,7 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-              overflow-x: hidden;
+            overflow-x: hidden;
         }
 
         html {
@@ -144,7 +147,7 @@
             <span class="text-4xl font-extrabold mb-4 text-laranjaBeltrao ">Sobre Nós</span>
             <div class="h-1 w-24 bg-laranjaBeltrao mx-auto mb-6 rounded-full mt-3"></div>
             <p class="text-lg md:text-xl text-gray-100 leading-relaxed">
-                Com mais de <span class="text-laranjaBeltrao font-semibold">15 anos de experiência</span>, oferecemos
+                Com mais de <span class="text-laranjaBeltrao font-semibold">10 anos de experiência</span>, oferecemos
                 <span class="text-laranjaBeltrao font-semibold">produtos de primeira linha</span>, suporte técnico
                 especializado
                 e um atendimento que valoriza cada cliente. Trazemos <span class="text-laranjaBeltrao font-semibold">cor
@@ -154,40 +157,32 @@
         </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="bg-white py-20 px-6 ">
-        <div class="max-w-4xl mx-auto wow animate__animated animate__zoomIn">
-            <h3 class="text-4xl font-extrabold text-azulBeltrao text-center mb-12">Fale Conosco</h3>
-            <form class="space-y-8" novalidate>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <label for="nome" class="block text-sm font-semibold text-gray-700 mb-2">Seu nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"
-                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
-                            required>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Seu e-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
-                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
-                            required>
-                    </div>
-                </div>
+    <section id="parceiros" class="bg-white py-20 px-6">
+        <div class="max-w-6xl mx-auto wow animate__animated animate__zoomIn">
+            <h3 class="text-4xl font-extrabold text-azulBeltrao text-center">Nossos Parceiros</h3>
+            <div class="h-1 w-24 bg-azulBeltrao mx-auto mb-6 rounded-full my-5"></div>
 
-                <div>
-                    <label for="mensagem" class="block text-sm font-semibold text-gray-700 mb-2">Sua mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..."
-                        class="w-full p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
-                        required></textarea>
-                </div>
+            <div class="mt-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center mt-5">
+                    <div class="flex items-center justify-center">
+                        <img src="img/logotipo-suvinil-fundo-laranja.jpg" alt="Suvinil" class="max-h-20 object-contain">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="img/4497aebeb328f705e3232859454870d53741f1727b77bbb8e44ef1fc67778bcf.png"
+                            alt="eucatex" class="max-h-20 object-contain">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="img/Tintas-Dacar-Logo-Vector.svg-.png" alt="dacar" class="max-h-20 object-contain">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="img/LOGO-PARCEIRAS-02.webp" alt="Atlas" class="max-h-20 object-contain">
+                    </div>
 
-                <div class="text-center">
-                    <button type="submit"
-                        class="bg-laranjaBeltrao text-white font-bold px-8 py-4 rounded-lg hover:bg-orange-600 transition-shadow shadow-md hover:shadow-lg">
-                        Enviar
-                    </button>
+                    <div class="col-span-2 md:col-span-1 lg:col-start-2 lg:col-span-2 flex items-center justify-center">
+                        <img src="img/atlas.webp" alt="Atlas" class="max-h-20 object-contain">
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -200,7 +195,7 @@
             <div class="lg:col-span-1">
                 <h4 class="text-xl font-bold text-laranjaBeltrao mb-3">Tintas Beltrão</h4>
                 <p class="text-sm text-gray-300">
-                    Mais de 15 anos de tradição em soluções em tintas. Compromisso com qualidade e atendimento em
+                    Mais de 10 anos de tradição em soluções em tintas. Compromisso com qualidade e atendimento em
                     Engenheiro Beltrão e região.
                 </p>
             </div>
@@ -210,7 +205,9 @@
                 <h5 class="text-lg font-semibold text-laranjaBeltrao mb-3">Contato</h5>
                 <p class="text-sm text-gray-200">
                     Tel: (44) 98445-1987<br>
-                    WhatsApp: <a class="underline text-laranjaBeltrao" target="_blank" href="https://wa.me/5544984451987?text=Oi!%20Quero%20atendimento%20personalizado.%20Pode%20me%20ajudar%3F">(44) 98445-1987</a><br>
+                    WhatsApp: <a class="underline text-laranjaBeltrao" target="_blank"
+                        href="https://wa.me/5544984451987?text=Oi!%20Quero%20atendimento%20personalizado.%20Pode%20me%20ajudar%3F">(44)
+                        98445-1987</a><br>
                     Email: contato@tintasbeltrao.com
                 </p>
             </div>
@@ -244,6 +241,11 @@
         </div>
     </footer>
 
+    <a href="https://wa.me/5544984451987?text=Oi!%20Quero%20atendimento%20personalizado.%20Pode%20me%20ajudar%3F"
+        class="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 py-1.5 text-2xl  transition"
+        target="_blank" aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 </body>
 <script>
