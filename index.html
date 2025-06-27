@@ -22,231 +22,246 @@
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Animate.css (obrigatório) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Inicialize WOW -->
+    <script>
+        new WOW().init();
+    </script>
+
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
+              overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 
 <body class="bg-white text-gray-900 ">
 
-<!-- Header -->
-<div class=" bg-[url('img/background-3.jpg')] bg-cover bg-bottom ">
+    <!-- Header -->
+    <div class=" bg-[url('img/background-3.jpg')] bg-cover bg-bottom ">
 
-    <header class="w-full text-white ">
-        <div class="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between relative">
-            <img src="img/logo-2.png" class="h-12" alt="Logo Tintas Beltrão" />
-            
-            <!-- Botão menu mobile -->
-            <button id="menu-btn" aria-label="Abrir menu"
-                class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none">
-                <span class="block w-8 h-0.5 bg-laranjaBeltrao"></span>
-                <span class="block w-8 h-0.5 bg-laranjaBeltrao"></span>
-                <span class="block w-8 h-0.5 bg-laranjaBeltrao"></span>
-            </button>
+        <header class="w-full text-white ">
+            <div class="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between relative">
+                <img src="img/logo-2.png" class="h-12" alt="Logo Tintas Beltrão" />
 
-            <nav id="menu" class="hidden md:flex gap-6 text-sm">
-                <a href="#home" class="text-laranjaBeltrao font-semibold">Home</a>
-                <a href="#produtos" class="hover:text-laranjaBeltrao">Produtos</a>
-                <a href="#sobre" class="hover:text-laranjaBeltrao">Sobre</a>
-                <a href="#contato" class="hover:text-laranjaBeltrao">Contato</a>
-            </nav>
-        </div>
-    </header>
+                <!-- Botão menu mobile -->
+                <button id="menu-btn" aria-label="Abrir menu"
+                    class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none">
+                    <span class="block w-8 h-0.5 bg-laranjaBeltrao"></span>
+                    <span class="block w-8 h-0.5 bg-laranjaBeltrao"></span>
+                    <span class="block w-8 h-0.5 bg-laranjaBeltrao"></span>
+                </button>
 
-    <!-- Hero -->
-    <section class="flex items-center justify-center min-h-[45rem] text-center">
-        <div class="-mt-20">
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">As cores da sua casa começam aqui</h2>
-            <p class="text-lg text-gray-400 mb-6">Tintas de qualidade, atendimento de confiança e os melhores preços
-                da região.</p>
-            <a href="#produtos"
-                class="bg-laranjaBeltrao text-white font-bold py-3 px-6 rounded hover:bg-red-700 transition">Ver
-                Produtos</a>
+                <nav id="menu" class="hidden md:flex gap-6 text-sm">
+                    <a href="#home" class="text-laranjaBeltrao font-semibold">Home</a>
+                    <a href="#produtos" class="hover:text-laranjaBeltrao">Produtos</a>
+                    <a href="#sobre" class="hover:text-laranjaBeltrao">Sobre</a>
+                    <a href="#contato" class="hover:text-laranjaBeltrao">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="flex items-center justify-center min-h-[45rem] text-center lg:p-0 md:-0 p-5">
+            <div class="-mt-20 wow animate__animated animate__fadeInDownBig">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">As cores da sua casa começam aqui</h2>
+                <p class="text-lg text-gray-400 mb-6">Tintas de qualidade, atendimento de confiança e os melhores preços
+                    da região.</p>
+                <a href="#produtos"
+                    class="bg-laranjaBeltrao text-white font-bold py-3 px-6 rounded hover:bg-red-700 transition">Ver
+                    Produtos</a>
+            </div>
+        </section>
+    </div>
+    <!-- Produtos -->
+    <section id="produtos" class="py-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-14 wow animate__animated animate__fadeInDown">
+                <h3 class="text-4xl font-extrabold text-azulBeltrao">Nossos Produtos</h3>
+                <p class="text-lg text-gray-600 mt-2">Soluções completas para cada etapa da sua pintura</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Produto 1 -->
+                <div
+                    class="bg-azulBeltrao text-white rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform duration-300  wow animate__animated animate__fadeInLeft">
+                    <div class="mb-4">
+                        <svg class="w-10 h-10 text-laranjaBeltrao" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M5 3h14a2 2 0 012 2v6h-2V5H5v14h14v-6h2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+                            <path d="M21 12l-4-4v3H9v2h8v3z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Tintas Acrílicas</h4>
+                    <p class="text-gray-100">Alta cobertura e durabilidade com acabamento impecável para ambientes
+                        internos e externos.</p>
+                </div>
+
+                <!-- Produto 2 -->
+                <div
+                    class="bg-white border border-laranjaBeltrao text-azulBeltrao rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform duration-300 wow animate__animated animate__fadeInUp">
+                    <div class="mb-4">
+                        <svg class="w-10 h-10 text-laranjaBeltrao" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 3h18v2H3V3zm2 4h14v14H5V7zm2 2v10h10V9H7z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Esmaltes Sintéticos</h4>
+                    <p class="text-gray-700">Ideal para madeiras e metais, com acabamento brilhante ou fosco e excelente
+                        aderência.</p>
+                </div>
+
+                <!-- Produto 3 -->
+                <div
+                    class="bg-laranjaBeltrao text-white rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform duration-300 wow animate__animated animate__fadeInRight">
+                    <div class="mb-4">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M2 6h20v2H2V6zm2 4h16v2H4v-2zm3 4h10v2H7v-2zm3 4h4v2h-4v-2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Preparadores e Massas</h4>
+                    <p class="text-white/90">Fundamentais para nivelar e proteger superfícies antes da pintura final.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-</div>
-<!-- Produtos -->
-<section id="produtos" class="py-20 bg-white px-6">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-14">
-            <h3 class="text-4xl font-extrabold text-azulBeltrao">Nossos Produtos</h3>
-            <p class="text-lg text-gray-600 mt-2">Soluções completas para cada etapa da sua pintura</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <!-- Produto 1 -->
-            <div class="bg-azulBeltrao text-white rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform duration-300">
-                <div class="mb-4">
-                    <svg class="w-10 h-10 text-laranjaBeltrao" fill="currentColor" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 012 2v6h-2V5H5v14h14v-6h2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"/><path d="M21 12l-4-4v3H9v2h8v3z"/></svg>
-                </div>
-                <h4 class="text-2xl font-bold mb-2">Tintas Acrílicas</h4>
-                <p class="text-gray-100">Alta cobertura e durabilidade com acabamento impecável para ambientes internos e externos.</p>
-            </div>
-
-            <!-- Produto 2 -->
-            <div class="bg-white border border-laranjaBeltrao text-azulBeltrao rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform duration-300">
-                <div class="mb-4">
-                    <svg class="w-10 h-10 text-laranjaBeltrao" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v2H3V3zm2 4h14v14H5V7zm2 2v10h10V9H7z"/></svg>
-                </div>
-                <h4 class="text-2xl font-bold mb-2">Esmaltes Sintéticos</h4>
-                <p class="text-gray-700">Ideal para madeiras e metais, com acabamento brilhante ou fosco e excelente aderência.</p>
-            </div>
-
-            <!-- Produto 3 -->
-            <div class="bg-laranjaBeltrao text-white rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform duration-300">
-                <div class="mb-4">
-                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M2 6h20v2H2V6zm2 4h16v2H4v-2zm3 4h10v2H7v-2zm3 4h4v2h-4v-2z"/></svg>
-                </div>
-                <h4 class="text-2xl font-bold mb-2">Preparadores e Massas</h4>
-                <p class="text-white/90">Fundamentais para nivelar e proteger superfícies antes da pintura final.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
-<!-- Sobre -->
-<section id="sobre" class="bg-azulBeltrao text-white py-20 px-6">
-    <div class="max-w-5xl mx-auto text-center">
-     <span class="text-4xl font-extrabold mb-4 text-laranjaBeltrao">Sobre Nós</span>
-        <div class="h-1 w-24 bg-laranjaBeltrao mx-auto mb-6 rounded-full mt-3"></div>
-        <p class="text-lg md:text-xl text-gray-100 leading-relaxed">
-            Com mais de <span class="text-laranjaBeltrao font-semibold">15 anos de experiência</span>, oferecemos 
-            <span class="text-laranjaBeltrao font-semibold">produtos de primeira linha</span>, suporte técnico especializado 
-            e um atendimento que valoriza cada cliente. Trazemos <span class="text-laranjaBeltrao font-semibold">cor e qualidade</span> 
-            para sua obra ou reforma.
-        </p>
-    </div>
-</section>
-
-  <!-- Contato -->
-<section id="contato" class="bg-white py-20 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h3 class="text-4xl font-extrabold text-azulBeltrao text-center mb-12">Fale Conosco</h3>
-    <form class="space-y-8" novalidate>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <label for="nome" class="block text-sm font-semibold text-gray-700 mb-2">Seu nome</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Digite seu nome"
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
-            required
-          >
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Seu e-mail</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Digite seu e-mail"
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
-            required
-          >
-        </div>
-      </div>
-
-      <div>
-        <label for="mensagem" class="block text-sm font-semibold text-gray-700 mb-2">Sua mensagem</label>
-        <textarea
-          id="mensagem"
-          name="mensagem"
-          rows="6"
-          placeholder="Escreva sua mensagem aqui..."
-          class="w-full p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
-          required
-        ></textarea>
-      </div>
-
-      <div class="text-center">
-        <button
-          type="submit"
-          class="bg-laranjaBeltrao text-white font-bold px-8 py-4 rounded-lg hover:bg-orange-600 transition-shadow shadow-md hover:shadow-lg"
-        >
-          Enviar
-        </button>
-      </div>
-    </form>
-  </div>
-</section>
-
-
-<!-- Footer -->
-<footer class="bg-azulBeltrao text-white px-6 pt-16 pb-8">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10">
-
-        <!-- Sobre -->
-        <div class="lg:col-span-1">
-            <h4 class="text-xl font-bold text-laranjaBeltrao mb-3">Tintas Beltrão</h4>
-            <p class="text-sm text-gray-300">
-                Mais de 15 anos de tradição em soluções em tintas. Compromisso com qualidade e atendimento em Engenheiro Beltrão e região.
+    <!-- Sobre -->
+    <section id="sobre" class="bg-azulBeltrao text-white py-20 px-6 ">
+        <div class="max-w-5xl mx-auto text-center wow animate__animated animate__bounceInRight">
+            <span class="text-4xl font-extrabold mb-4 text-laranjaBeltrao ">Sobre Nós</span>
+            <div class="h-1 w-24 bg-laranjaBeltrao mx-auto mb-6 rounded-full mt-3"></div>
+            <p class="text-lg md:text-xl text-gray-100 leading-relaxed">
+                Com mais de <span class="text-laranjaBeltrao font-semibold">15 anos de experiência</span>, oferecemos
+                <span class="text-laranjaBeltrao font-semibold">produtos de primeira linha</span>, suporte técnico
+                especializado
+                e um atendimento que valoriza cada cliente. Trazemos <span class="text-laranjaBeltrao font-semibold">cor
+                    e qualidade</span>
+                para sua obra ou reforma.
             </p>
         </div>
+    </section>
 
-        <!-- Contato -->
-        <div>
-            <h5 class="text-lg font-semibold text-laranjaBeltrao mb-3">Contato</h5>
-            <p class="text-sm text-gray-200">
-                Tel: (XX) XXXXX-XXXX<br>
-                WhatsApp: (XX) XXXXX-XXXX<br>
-                Email: contato@tintasbeltrao.com
-            </p>
+    <!-- Contato -->
+    <section id="contato" class="bg-white py-20 px-6 ">
+        <div class="max-w-4xl mx-auto wow animate__animated animate__zoomIn">
+            <h3 class="text-4xl font-extrabold text-azulBeltrao text-center mb-12">Fale Conosco</h3>
+            <form class="space-y-8" novalidate>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <label for="nome" class="block text-sm font-semibold text-gray-700 mb-2">Seu nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
+                            required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Seu e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
+                            required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="mensagem" class="block text-sm font-semibold text-gray-700 mb-2">Sua mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..."
+                        class="w-full p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-laranjaBeltrao focus:border-laranjaBeltrao transition"
+                        required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-laranjaBeltrao text-white font-bold px-8 py-4 rounded-lg hover:bg-orange-600 transition-shadow shadow-md hover:shadow-lg">
+                        Enviar
+                    </button>
+                </div>
+            </form>
         </div>
+    </section>
 
-        <!-- Links -->
-        <div>
-            <h5 class="text-lg font-semibold text-laranjaBeltrao mb-3">Links Rápidos</h5>
-            <ul class="text-sm text-gray-200 space-y-1">
-                <li><a href="#sobre" class="hover:underline">Sobre</a></li>
-                <li><a href="#produtos" class="hover:underline">Produtos</a></li>
-                <li><a href="#contato" class="hover:underline">Contato</a></li>
-            </ul>
-        </div>
 
-        <!-- Mapa -->
-        <div>
-            <h5 class="text-lg font-semibold text-laranjaBeltrao mb-3">Nossa Localização</h5>
-            <div class="rounded overflow-hidden shadow-lg">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.1642881745136!2d-52.2633714!3d-23.794183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd7a35c57f9d3%3A0x82747637996c53b7!2sEngenheiro%20Beltr%C3%A3o%2C%20PR%2C%2087260-000!5e0!3m2!1spt-BR!2sbr!4v1710000000000"
-                    width="100%"
-                    height="200"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+    <!-- Footer -->
+    <footer class="bg-azulBeltrao text-white px-6 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10">
+
+            <!-- Sobre -->
+            <div class="lg:col-span-1">
+                <h4 class="text-xl font-bold text-laranjaBeltrao mb-3">Tintas Beltrão</h4>
+                <p class="text-sm text-gray-300">
+                    Mais de 15 anos de tradição em soluções em tintas. Compromisso com qualidade e atendimento em
+                    Engenheiro Beltrão e região.
+                </p>
             </div>
+
+            <!-- Contato -->
+            <div>
+                <h5 class="text-lg font-semibold text-laranjaBeltrao mb-3">Contato</h5>
+                <p class="text-sm text-gray-200">
+                    Tel: (44) 98445-1987<br>
+                    WhatsApp: <a class="underline text-laranjaBeltrao" target="_blank" href="https://wa.me/5544984451987?text=Oi!%20Quero%20atendimento%20personalizado.%20Pode%20me%20ajudar%3F">(44) 98445-1987</a><br>
+                    Email: contato@tintasbeltrao.com
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h5 class="text-lg font-semibold text-laranjaBeltrao mb-3">Links Rápidos</h5>
+                <ul class="text-sm text-gray-200 space-y-1">
+                    <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+                    <li><a href="#produtos" class="hover:underline">Produtos</a></li>
+                    <li><a href="#contato" class="hover:underline">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Mapa -->
+            <div>
+                <h5 class="text-lg font-semibold text-laranjaBeltrao mb-3">Nossa Localização</h5>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.9407234630169!2d-52.25891780831231!3d-23.80101116115384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed110071921947%3A0xd34f92afa06834e0!2sTintas%20Beltr%C3%A3o!5e1!3m2!1spt-BR!2sbr!4v1751043824749!5m2!1spt-BR!2sbr"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-
-    <!-- Rodapé final -->
-    <div class="border-t border-white/10 mt-10 pt-4 text-center text-sm text-gray-400">
-        &copy; 2025 Tintas Beltrão. Todos os direitos reservados.
-    </div>
-</footer>
+        <!-- Rodapé final -->
+        <div class="border-t border-white/10 mt-10 pt-4 text-center text-sm text-gray-400">
+            &copy; 2025 Tintas Beltrão. Todos os direitos reservados.
+        </div>
+    </footer>
 
 
 </body>
 <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
 
-  menuBtn.addEventListener('click', () => {
-    if (menu.classList.contains('hidden')) {
-      menu.classList.remove('hidden');
-      menu.classList.add('flex', 'flex-col', 'absolute', 'top-full', 'right-4', 'bg-white/5', 'p-4', 'rounded-md', 'space-y-4', 'md:static', 'md:flex-row', 'md:bg-transparent', 'md:p-0', 'md:space-y-0', 'w-full', 'gap-0', 'px-10');
-    } else {
-      menu.classList.add('hidden');
-      menu.classList.remove('flex', 'flex-col', 'absolute', 'top-full', 'right-4', 'bg-azulBeltrao', 'p-4', 'rounded-md', 'space-y-4', 'w-fit');
-    }
-  });
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            menu.classList.add('flex', 'flex-col', 'absolute', 'top-full', 'right-4', 'bg-white/5', 'p-4', 'rounded-md', 'space-y-4', 'md:static', 'md:flex-row', 'md:bg-transparent', 'md:p-0', 'md:space-y-0', 'w-full', 'gap-0', 'px-10');
+        } else {
+            menu.classList.add('hidden');
+            menu.classList.remove('flex', 'flex-col', 'absolute', 'top-full', 'right-4', 'bg-azulBeltrao', 'p-4', 'rounded-md', 'space-y-4', 'w-fit');
+        }
+    });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 </html>
